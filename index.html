@@ -220,10 +220,13 @@
             Dominos-Pizza
           </button>
         </div>
-        <div class="w-[90%] mx-auto">
-          <div class="grid grid-cols-4 justify-items-center">
+        <div class="w-[90%] mx-auto mt-10">
+          <div
+            class="grid grid-cols-4 grid-rows-2 justify-items-center gap-x-10 gap-y-5"
+          >
+            <!--TODO CardOne -->
             <div
-              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_gray]"
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
             >
               <div
                 class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
@@ -232,21 +235,347 @@
                   class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
                 ></div>
               </div>
-              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
                 <div>
                   <img
-                    src="./photo/cheeseburger.png"
+                    src="./photo/kfc/kfc1.png"
                     alt=""
                     class="h-[120px] object-cover"
                   />
-                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolor, voluptas.
-                  </p>
                 </div>
-                <div class="absolute top-[120px] right-[30px]">
-                  <strong class="text-[20px] font-bold">$5.00</strong>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">BBQ Tenders</h4>
+                    <p class="line-clamp-3">
+                      It's spicy, it's smoky... It's the new BBQ Tenders Burger!
+                      Hot & Crispy Tenders drizzled with smoky BBQ sauce and
+                      creamy mayonnaise sandwiched between toasted buns.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$4.00</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--TODO CardTwo -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc2.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">Zinger Stacker</h4>
+                    <p class="line-clamp-3">
+                      Zinger Stacker with 2 Zinger fillets, 2 cheese slices, and
+                      2 classic sauces with fresh lettuce, layered between two
+                      soft sesame buns.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$8.00</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TODO CardThree -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc3.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">Zinger Burger</h4>
+                    <p class="line-clamp-3">
+                      A Zinger Burger is KFC’s original fried chicken recipe
+                      with a spicy twist. Hot fried chicken is sandwiched
+                      between a sesame bun together with lettuce and a creamy
+                      dressing for a classic chicken burger with a hint of
+                      spice.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$6.95</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TODO CardFour -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc4.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">ETC Stacker</h4>
+                    <p class="line-clamp-3">
+                      Experience The Crunch with the all-new ETC burger! Packed
+                      with explosive flavour, look no further for your new
+                      favourite burger.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$8.30</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TODO CardFive -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc5.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">ETC Burger</h4>
+                    <p class="line-clamp-3">
+                      The new burgers feature fluffy glazed sesame buns or
+                      brioche buns, crunchy and zesty fresh pickles, fresh
+                      random-cut lettuce, and chicken fillets that are freshly
+                      breaded daily in-store before they are carefully assembled
+                      into burgers.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$7.30</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TODO CardSix -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc6.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">Smokey Zinger</h4>
+                    <p class="line-clamp-3">
+                      Heat things up with the new Smokey Hot Zinger. If it makes
+                      you feel all hot and bothered, it's doing its job right.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$7.95</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TODO CardSeven -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc7.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">Cheese Fries</h4>
+                    <p class="line-clamp-3">
+                      KFC’s stays the closest to our hearts – We love the cheese
+                      fries from KFC and make it a point to order it every time
+                      we visit the fast-food chain.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$5.40</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TODO CardEight -->
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div
+                class="z-30 absolute top-[40px] left-[30px] flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="./photo/kfc/kfc8.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-3 mt-3">
+                  <div class="col-span-2 flex flex-col">
+                    <h4 class="font-bold text-[20px] mb-1">5PC Chicken</h4>
+                    <p class="line-clamp-3">
+                      KFC's original product is pressure-fried chicken pieces,
+                      seasoned with Sanders' signature recipe of "11 herbs and
+                      spices".
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-between">
+                    <strong class="text-[20px] font-bold">$17.75</strong>
+                    <a href="#">
+                      <button
+                        class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                      >
+                        <i class="fa-solid fa-basket-shopping text-white"></i>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
