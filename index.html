@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FastFoodHeaven</title>
+  </head>
+  <body class="h-[500vh] bg-gray-100">
+    <header>
+      <nav id="navBar" class="w-full fixed top-0 z-50 py-[20px]">
+        <section class="w-[90%] h-[60px] mx-auto flex items-center">
+          <div class="flex-1">
+            <ul
+              id="navList"
+              class="flex gap-10 text-white font-medium text-[18px]"
+            >
+              <li><a href="#" class="cursor-pointer">Home</a></li>
+              <li>
+                <button
+                  id="dropdownDelayButton"
+                  data-dropdown-toggle="dropdownDelay"
+                  data-dropdown-delay="500"
+                  class="inline-flex items-center"
+                  type="button"
+                >
+                  Brand
+                  <svg
+                    class="w-2.5 h-2.5 ml-[4px]"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="dropdownDelay"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                >
+                  <ul
+                    class="py-2 text-sm text-black"
+                    aria-labelledby="dropdownDelayButton"
+                  >
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
+                        >KFC</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
+                        >Burger-King</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
+                        >McDonald</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
+                        >Wendy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
+                        >Dominos-Pizza</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="cursor-pointer">About</a></li>
+              <li><a href="#" class="cursor-pointer">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <img
+              id="logo"
+              src="./photo/logo/logo1.2.png"
+              class="h-[40px] cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div
+            id="navIcon"
+            class="text-[18px] flex-1 flex justify-end gap-5 text-white"
+          >
+            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+            <i class="fa-solid fa-user cursor-pointer"></i>
+            <i class="fa-solid fa-bag-shopping cursor-pointer"></i>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <main
+      class="bg-[url('./photo/heroSection5.jpg')] h-[600px] object-cover bg-no-repeat bg-center relative"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <section class="z-20 relative">
+        <div
+          class="text-white text-center place-content-center h-[600px] cursor-default"
+        >
+          <small>A TASTE OF PURE INGREDIENTS</small>
+          <h1 class="text-[50px] font-black">
+            FAST FOOD LOVER <br />
+            PARADISE
+          </h1>
+          <button
+            class="bg-white rounded-md text-black px-10 py-2 font-medium z-50"
+          >
+            ORDER NOW
+          </button>
+        </div>
+      </section>
+      <section class="w-[90%] mx-auto">
+        <div class="grid grid-cols-4 gap-10 mt-10">
+          <div class="h-[440px] overflow-hidden relative">
+            <img
+              src="./photo/card1.jpg"
+              alt=""
+              class="object-cover w-full h-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div
+              class="absolute bottom-0 left-0 pl-[40px] pb-[60px] text-white"
+            >
+              <h1 class="text-[40px]">
+                Free <br />
+                Shipping
+              </h1>
+              <button class="font-semibold w">ORDER NOW</button>
+              <hr class="border-[2px] border-white w-[70px]" />
+            </div>
+          </div>
+          <div class="col-span-2 h-[440px] overflow-hidden relative">
+            <img
+              src="./photo/card2.jpg"
+              alt=""
+              class="object-cover w-full h-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div
+                class="bg-white h-[40%] w-[60%] flex flex-col items-center justify-center font-semibold relative"
+              >
+                <strong>Buy 2 Get 1</strong>
+                <h2 class="text-[40px]">SPECIAL OFFER</h2>
+                <button
+                  class="bg-white text-white py-2 px-7 absolute bottom-[-20px]"
+                >
+                  ORDER NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="h-[440px] overflow-hidden relative">
+            <img
+              src="./photo/card3.jpg"
+              alt=""
+              class="object-cover w-full h-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div
+              class="absolute bottom-0 right-0 pr-[40px] pb-[60px] text-white text-right"
+            >
+              <h1 class="text-[40px]">
+                20 % Off <br />
+                First Order
+              </h1>
+              <button class="font-semibold w">ORDER NOW</button>
+              <hr class="border-[2px] border-white w-[70px] ml-auto" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex justify-center gap-10 mt-10 font-medium">
+          <button
+            class="border-b-[3px] hover:border-[#C5291C] border-transparent"
+          >
+            KFC
+          </button>
+          <button
+            class="border-b-[3px] hover:border-[#C5291C] border-transparent"
+          >
+            Burger-King
+          </button>
+          <button
+            class="border-b-[3px] hover:border-[#C5291C] border-transparent"
+          >
+            McDonald
+          </button>
+          <button
+            class="border-b-[3px] hover:border-[#C5291C] border-transparent"
+          >
+            Wendy
+          </button>
+          <button
+            class="border-b-[3px] hover:border-[#C5291C] border-transparent"
+          >
+            Dominos-Pizza
+          </button>
+        </div>
+        <div class="w-[90%] mx-auto">
+          <div class="grid grid-cols-4 justify-items-center">
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white h-[300px] w-[300px] rounded-2xl border-none relative overflow-hidden shadow-[0_3px_0px_rgba(136, 136, 136, 0.5)]"
+            >
+              <div
+                class="bg-gray-100 h-[235px] w-[520px] rotate-[20deg] border-none translate-y-[-15px] translate-x-[-25px]"
+              >
+                <div
+                  class="bg-white h-[140px] w-[382px] border-none translate-y-[148px] translate-x-[-10px] rounded-[60px] rotate-[-1deg]"
+                ></div>
+              </div>
+              <div class="z-30 absolute top-[40px] left-[30px] flex text-black">
+                <div>
+                  <img
+                    src="./photo/cheeseburger.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                  <h4 class="font-bold mt-[25px]">Cheese Burger</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolor, voluptas.
+                  </p>
+                </div>
+                <div class="absolute top-[120px] right-[30px]">
+                  <strong class="text-[20px] font-bold">$5.00</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script type="module">
+      import { scrollNavbar } from "./js/index.js";
+      scrollNavbar();
+    </script>
+  </body>
+</html>
