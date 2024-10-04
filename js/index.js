@@ -1,3 +1,4 @@
+// TODO scollNavbar
 export function scrollNavbar() {
   const navbar = document.querySelector("#navBar");
   const navList = document.querySelector("#navList");
@@ -33,6 +34,7 @@ export function scrollNavbar() {
   document.addEventListener("scroll", updateNavbar);
 }
 
+// TODO switchTabs
 export function showMenu(evt, brand) {
   const tabcontent = document.querySelectorAll(".tabcontent");
   const tablinks = document.querySelectorAll(".tablinks");
@@ -50,6 +52,16 @@ export function showMenu(evt, brand) {
   evt.currentTarget.classList.add("border-[#C5291C]", "font-bold");
   evt.currentTarget.classList.remove("border-transparent");
 }
+// TODO set kfc as defualt
 window.onload = () =>
   showMenu({ currentTarget: document.querySelector(".tablinks") }, "kfc");
+
+// TODO clickHeart
+export function toggleHeart(icon) {
+  icon.classList.toggle("fa-regular");
+  icon.classList.toggle("fa-solid");
+}
+
+// ! Delcare fucntion to Global Function
 window.showMenu = showMenu;
+window.toggleHeart = toggleHeart;
