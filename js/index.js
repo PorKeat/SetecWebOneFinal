@@ -32,3 +32,24 @@ export function scrollNavbar() {
   updateNavbar();
   document.addEventListener("scroll", updateNavbar);
 }
+
+export function showMenu(evt, brand) {
+  const tabcontent = document.querySelectorAll(".tabcontent");
+  const tablinks = document.querySelectorAll(".tablinks");
+
+  tabcontent.forEach((item) => {
+    item.classList.add("hidden");
+    item.classList.add("translate-y-[25px]");
+  });
+  document.getElementById(brand).classList.remove("hidden");
+
+  tablinks.forEach((item) => {
+    item.classList.remove("border-[#C5291C]", "font-bold");
+    item.classList.add("border-transparent");
+  });
+  evt.currentTarget.classList.add("border-[#C5291C]", "font-bold");
+  evt.currentTarget.classList.remove("border-transparent");
+}
+window.onload = () =>
+  showMenu({ currentTarget: document.querySelector(".tablinks") }, "kfc");
+window.showMenu = showMenu;
