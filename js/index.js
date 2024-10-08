@@ -52,6 +52,7 @@ export function showMenu(evt, brand) {
   evt.currentTarget.classList.add("border-[#C5291C]", "font-bold");
   evt.currentTarget.classList.remove("border-transparent");
 }
+
 // TODO set kfc as defualt
 window.onload = () =>
   showMenu({ currentTarget: document.querySelector(".tablinks") }, "kfc");
