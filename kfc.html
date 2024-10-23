@@ -22,13 +22,13 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
     <script type="module">
-      import { scrollNavbar } from "../js/index.js";
-      import { NavBar } from "../components/navbar.js";
+      import { scrollNavbar } from "./js/index.js";
+      import { NavBar } from "./components/navbar.js";
 
-      const homeLink = "../index.html";
-      const aboutLink = "./aboutUs.html";
-      const contactLink = "./contact.html";
-      const kfc = "../kfc.html";
+      const homeLink = "./index.html";
+      const aboutLink = "./page/aboutUs.html";
+      const contactLink = "./page/contact.html";
+      const kfc = "./kfc.html";
       const burgerKing = "#";
       const mcDonald = "#";
       const wendy = "#";
@@ -38,7 +38,11 @@
         homeLink,
         aboutLink,
         contactLink,
-        kfc
+        kfc,
+        burgerKing,
+        mcDonald,
+        wendy,
+        hungryJack
       );
 
       scrollNavbar({

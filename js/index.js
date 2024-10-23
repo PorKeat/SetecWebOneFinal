@@ -1,7 +1,37 @@
 import { ChatBot } from "../components/chatbot.js";
 
-let renderChatBot = document.querySelector("#renderChatBot");
 document.addEventListener("DOMContentLoaded", () => {
+  const activePage = window.location.pathname;
+  console.log(activePage);
+  const navLinks = document.querySelectorAll("#navList a");
+  const brandButton = document.getElementById("dropdownDelayButton");
+
+  navLinks.forEach((link) => {
+    if (activePage.includes("/kfc.html")) {
+      brandButton.classList.add(
+        "transition-all",
+        "before:duration-500",
+        "before:h-1",
+        "before:rounded-full",
+        "before:w-full",
+        "before:opacity-100",
+        "before:bg-[#C5291C]"
+      );
+    } else if (link.href.includes(activePage)) {
+      link.classList.add(
+        "transition-all",
+        "before:duration-500",
+        "before:h-1",
+        "before:rounded-full",
+        "before:w-full",
+        "before:opacity-100",
+        "before:bg-[#C5291C]"
+      );
+    }
+  });
+
+  // TODO Render Chatbot
+  let renderChatBot = document.querySelector("#renderChatBot");
   renderChatBot.innerHTML = ChatBot();
   chatBot();
 });
