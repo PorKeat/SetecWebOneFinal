@@ -6,7 +6,7 @@ export const NavBar = (
   burgerKing,
   mcDonald,
   wendy,
-  hungryJack
+  hungryJack,
 ) => {
   return `      <nav id="navBar" class="w-full fixed top-0 z-50 py-[20px]">
         <section class="w-[90%] h-[60px] mx-auto flex items-center">
