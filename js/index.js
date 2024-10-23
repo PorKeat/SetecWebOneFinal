@@ -1,17 +1,13 @@
-import { NavBar } from "../components/navbar.js";
 import { ChatBot } from "../components/chatbot.js";
 
-let renderNavBar = document.querySelector("#renderNavBar");
 let renderChatBot = document.querySelector("#renderChatBot");
 document.addEventListener("DOMContentLoaded", () => {
-  renderNavBar.innerHTML = NavBar();
-  scrollNavbar();
   renderChatBot.innerHTML = ChatBot();
   chatBot();
 });
 
 // TODO scollNavbar
-const scrollNavbar = () => {
+export function scrollNavbar({ first, second }) {
   const navbar = document.querySelector("#navBar");
   const navList = document.querySelector("#navList");
   const navIcon = document.querySelector("#navIcon");
@@ -19,8 +15,8 @@ const scrollNavbar = () => {
 
   const updateNavbar = () => {
     navbar.style.transition = "0.6s";
-    navList.style.transition = "color 0.6s";
-    navIcon.style.transition = "color 0.6s";
+    navList.style.transition = "color 0.1s";
+    navIcon.style.transition = "color 0.1s";
 
     if (window.scrollY > 50) {
       navbar.classList.add("bg-white");
@@ -30,7 +26,7 @@ const scrollNavbar = () => {
       navList.classList.add("text-black");
       navIcon.classList.remove("text-white");
       navIcon.classList.add("text-black");
-      logo.src = "./photo/logo/logo1.png";
+      logo.src = first;
     } else {
       navbar.classList.remove("bg-white");
       navbar.classList.remove("py-[5px]");
@@ -39,12 +35,12 @@ const scrollNavbar = () => {
       navList.classList.add("text-white");
       navIcon.classList.remove("text-black");
       navIcon.classList.add("text-white");
-      logo.src = "./photo/logo/logo1.2.png";
+      logo.src = second;
     }
   };
   updateNavbar();
   document.addEventListener("scroll", updateNavbar);
-};
+}
 
 // TODO switchTabs
 export function showMenu(evt, brand) {

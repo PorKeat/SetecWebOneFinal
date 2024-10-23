@@ -1,14 +1,25 @@
-export const NavBar = (
-  home,
-  about,
-  contact,
-  kfc,
-  burgerKing,
-  mcDonald,
-  wendy,
-  hungryJack
-) => {
-  return `      <nav id="navBar" class="w-full fixed top-0 z-50 py-[20px]">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FastFoodHeaven</title>
+  </head>
+  <body class="bg-red-200 h-[200vh]">
+    <header>
+      <nav id="navBar" class="w-full fixed top-0 z-50 py-[20px]">
         <section class="w-[90%] h-[60px] mx-auto flex items-center">
           <div class="flex-1">
             <ul
@@ -17,7 +28,7 @@ export const NavBar = (
             >
               <li>
                 <a
-                  href=${home}
+                  href="../index.html"
                   class="cursor-pointer relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 hover:before:w-full hover:before:opacity-100 hover:before:bg-gradient-to-r hover:before:bg-[#C5291C]"
                 >
                   Home
@@ -43,27 +54,27 @@ export const NavBar = (
                     aria-labelledby="dropdownDelayButton"
                   >
                     <li>
-                      <a href=${kfc} class="block px-4 py-2 hover:bg-gray-200"
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
                         >KFC</a
                       >
                     </li>
                     <li>
-                      <a href=${burgerKing} class="block px-4 py-2 hover:bg-gray-200"
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
                         >Burger-King</a
                       >
                     </li>
                     <li>
-                      <a href=${mcDonald}} class="block px-4 py-2 hover:bg-gray-200"
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
                         >McDonald</a
                       >
                     </li>
                     <li>
-                      <a href=${wendy} class="block px-4 py-2 hover:bg-gray-200"
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
                         >Wendy</a
                       >
                     </li>
                     <li>
-                      <a href=${hungryJack} class="block px-4 py-2 hover:bg-gray-200"
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
                         >Hungry-Jack's</a
                       >
                     </li>
@@ -72,14 +83,14 @@ export const NavBar = (
               </li>
               <li>
                 <a
-                  href=${about}
-                  class="cursor-pointer relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 hover:before:w-full hover:before:opacity-100 hover:before:bg-gradient-to-r hover:before:bg-[#C5291C]"
+                  href="./aboutUs.html"
+                  class="cursor-pointer relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-1/2 before:-translate-x-1/2 before:h-1 before:rounded-full before:transition-all before:duration-500 before:w-full before:opacity-100 hover:before:bg-gradient-to-r before:bg-[#C5291C]"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href=${contact}
+                  href="#"
                   class="cursor-pointer relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 hover:before:w-full hover:before:opacity-100 hover:before:bg-gradient-to-r hover:before:bg-[#C5291C]"
                   >Contact</a
                 >
@@ -103,5 +114,14 @@ export const NavBar = (
             <i class="fa-solid fa-bag-shopping cursor-pointer"></i>
           </div>
         </section>
-      </nav>`;
-};
+      </nav>
+    </header>
+    <script type="module">
+      import { scrollNavbar } from "../js/index.js";
+      scrollNavbar({
+        first: "../photo/logo/logo1.png",
+        second: "../photo/logo/logo1.2.png",
+      });
+    </script>
+  </body>
+</html>
