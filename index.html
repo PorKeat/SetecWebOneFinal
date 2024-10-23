@@ -18,85 +18,7 @@
     <title>FastFoodHeaven</title>
   </head>
   <body class="bg-gray-100 flex flex-col min-h-screen">
-    <header>
-      <nav id="navBar" class="w-full fixed top-0 z-50 py-[20px]">
-        <section class="w-[90%] h-[60px] mx-auto flex items-center">
-          <div class="flex-1">
-            <ul
-              id="navList"
-              class="flex gap-10 text-white font-medium text-[18px]"
-            >
-              <li><a href="#" class="cursor-pointer">Home</a></li>
-              <li>
-                <button
-                  id="dropdownDelayButton"
-                  data-dropdown-toggle="dropdownDelay"
-                  data-dropdown-delay="500"
-                  class="inline-flex items-center"
-                  type="button"
-                >
-                  Brand
-                  <i class="fa-solid fa-caret-down ml-2"></i>
-                </button>
-                <div
-                  id="dropdownDelay"
-                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-                >
-                  <ul
-                    class="py-2 text-sm text-black"
-                    aria-labelledby="dropdownDelayButton"
-                  >
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
-                        >KFC</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
-                        >Burger-King</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
-                        >McDonald</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
-                        >Wendy</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-200"
-                        >Hungry-Jack's</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="#" class="cursor-pointer">About</a></li>
-              <li><a href="#" class="cursor-pointer">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <img
-              id="logo"
-              src="./photo/logo/logo1.2.png"
-              class="h-[40px] cursor-pointer"
-              alt="logo"
-            />
-          </div>
-          <div
-            id="navIcon"
-            class="text-[18px] flex-1 flex justify-end gap-5 text-white"
-          >
-            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
-            <i class="fa-solid fa-user cursor-pointer"></i>
-            <i class="fa-solid fa-bag-shopping cursor-pointer"></i>
-          </div>
-        </section>
-      </nav>
-    </header>
+    <header id="renderNavBar"></header>
     <main class="flex-grow">
       <section
         class="bg-[url('./photo/heroSection5.jpg')] h-[600px] object-cover bg-no-repeat bg-center relative"
@@ -263,7 +185,7 @@
                       <strong class="text-[20px] font-bold">$4.00</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -307,7 +229,7 @@
                       <strong class="text-[20px] font-bold">$8.00</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -353,7 +275,7 @@
                       <strong class="text-[20px] font-bold">$6.95</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -397,7 +319,7 @@
                       <strong class="text-[20px] font-bold">$8.30</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -443,7 +365,7 @@
                       <strong class="text-[20px] font-bold">$7.30</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -487,7 +409,7 @@
                       <strong class="text-[20px] font-bold">$7.95</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -531,7 +453,7 @@
                       <strong class="text-[20px] font-bold">$5.40</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -575,7 +497,7 @@
                       <strong class="text-[20px] font-bold">$17.75</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -635,7 +557,7 @@
                       <strong class="text-[20px] font-bold">$6.49</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -679,7 +601,7 @@
                       <strong class="text-[20px] font-bold">$7.45</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -723,7 +645,7 @@
                       <strong class="text-[20px] font-bold">$3.29</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -768,7 +690,7 @@
                       <strong class="text-[20px] font-bold">$9.49</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -812,7 +734,7 @@
                       <strong class="text-[20px] font-bold">$4.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -855,7 +777,7 @@
                       <strong class="text-[20px] font-bold">$6.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -900,7 +822,7 @@
                       <strong class="text-[20px] font-bold">$5.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -947,7 +869,7 @@
                       <strong class="text-[20px] font-bold">$8.49 </strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1008,7 +930,7 @@
                       <strong class="text-[20px] font-bold">$5.17</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1052,7 +974,7 @@
                       <strong class="text-[20px] font-bold">$3.39</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1096,7 +1018,7 @@
                       <strong class="text-[20px] font-bold">$2.49</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1140,7 +1062,7 @@
                       <strong class="text-[20px] font-bold">$3.79</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1184,7 +1106,7 @@
                       <strong class="text-[20px] font-bold">$4.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1228,7 +1150,7 @@
                       <strong class="text-[20px] font-bold">$3.59</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1274,7 +1196,7 @@
                       <strong class="text-[20px] font-bold">$5.59</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1321,7 +1243,7 @@
                       <strong class="text-[20px] font-bold">$4.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1381,7 +1303,7 @@
                       <strong class="text-[20px] font-bold">$4.69</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1427,7 +1349,7 @@
                       <strong class="text-[20px] font-bold">$2.49</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1471,7 +1393,7 @@
                       <strong class="text-[20px] font-bold">$6.49</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1515,7 +1437,7 @@
                       <strong class="text-[20px] font-bold">$7.69</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1559,7 +1481,7 @@
                       <strong class="text-[20px] font-bold">$8.89</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1603,7 +1525,7 @@
                       <strong class="text-[20px] font-bold">$2.19</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1647,7 +1569,7 @@
                       <strong class="text-[20px] font-bold">$2.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1692,7 +1614,7 @@
                       <strong class="text-[20px] font-bold">$5.99</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1753,7 +1675,7 @@
                       <strong class="text-[20px] font-bold">$6.90</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1800,7 +1722,7 @@
                       <strong class="text-[20px] font-bold">$8.90</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1847,7 +1769,7 @@
                       <strong class="text-[20px] font-bold">$8.70</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1893,7 +1815,7 @@
                       <strong class="text-[20px] font-bold">$7.70</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1938,7 +1860,7 @@
                       <strong class="text-[20px] font-bold">$8.30</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -1983,7 +1905,7 @@
                       <strong class="text-[20px] font-bold">$7.60</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -2033,7 +1955,7 @@
                       >
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -2080,7 +2002,7 @@
                       <strong class="text-[20px] font-bold">$3.00</strong>
                       <a href="#">
                         <button
-                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-600 hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
+                          class="text-center px-4 py-1 bg-[#C5291C] rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#C5291C] hover:shadow-[1px_1px_2px_4px_rgba(255,0,0,0.7)]"
                         >
                           <i class="fa-solid fa-basket-shopping text-white"></i>
                         </button>
@@ -2547,6 +2469,8 @@
           </div>
         </div>
       </section>
+      <!-- TODO Chat Bot -->
+      <section id="renderChatBot"></section>
     </main>
     <footer class="relative flex flex-col text-white">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -2691,9 +2615,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
     <script type="module">
-      import { scrollNavbar, showMenu, toggleHeart } from "./js/index.js";
-      scrollNavbar();
+      import { showMenu, toggleHeart } from "./js/index.js";
       showMenu(evt, brand);
       toggleHeart(icon);
     </script>
