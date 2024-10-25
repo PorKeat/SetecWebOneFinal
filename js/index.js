@@ -7,7 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const brandButton = document.getElementById("dropdownDelayButton");
 
   navLinks.forEach((link) => {
-    if (activePage.includes("/kfc.html")) {
+    if (activePage.includes("/detail")) {
+      link.classList.remove(
+        "before:bg-[#C5291C]"
+      );
+      link.classList.add(
+        "hover:before:w-full",
+        "hover:before:opacity-100",
+        "hover:before:bg-[#C5291C]"
+      );
+    } else if (activePage.includes("/kfc.html")) {
       brandButton.classList.add(
         "transition-all",
         "before:duration-500",
@@ -42,6 +51,7 @@ export function scrollNavbar({ first, second }) {
   const navList = document.querySelector("#navList");
   const navIcon = document.querySelector("#navIcon");
   const logo = document.querySelector("#logo");
+  const activePage = window.location.pathname;
 
   const updateNavbar = () => {
     navbar.style.transition = "0.6s";
@@ -63,9 +73,18 @@ export function scrollNavbar({ first, second }) {
       navbar.classList.add("py-[20px]");
       navList.classList.remove("text-black");
       navList.classList.add("text-white");
-      navIcon.classList.remove("text-black");
-      navIcon.classList.add("text-white");
-      logo.src = second;
+      if (activePage.includes("/detail")) {
+        navIcon.classList.add("text-black");
+        navIcon.classList.remove("text-white");
+        navList.classList.remove("text-white");
+        navList.classList.add("text-black");
+        logo.src = first;
+      } else {
+        navIcon.classList.remove("text-black");
+        navIcon.classList.add("text-white");
+        navList.classList.remove("text-black");
+        logo.src = second;
+      }
     }
   };
   updateNavbar();
