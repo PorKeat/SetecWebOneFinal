@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
-      link.classList.remove(
-        "before:bg-[#C5291C]"
-      );
+      link.classList.remove("before:bg-[#C5291C]");
       link.classList.add(
         "hover:before:w-full",
         "hover:before:opacity-100",
@@ -43,6 +41,31 @@ document.addEventListener("DOMContentLoaded", () => {
   let renderChatBot = document.querySelector("#renderChatBot");
   renderChatBot.innerHTML = ChatBot();
   chatBot();
+});
+
+// TODO Scroll Click Back
+
+let scrollUpIcon = document.getElementById("scrollIcon");
+let isScrolling;
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    scrollUpIcon.classList.add("opacity-0");
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(function () {
+      scrollUpIcon.classList.remove("opacity-0");
+    }, 200);
+  } else {
+    scrollUpIcon.classList.add("opacity-0");
+  }
+});
+
+scrollUpIcon.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
 
 // TODO scollNavbar
