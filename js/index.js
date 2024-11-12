@@ -80,6 +80,9 @@ export function scrollNavbar({ first, second }) {
     navbar.style.transition = "0.6s";
     navList.style.transition = "color 0.1s";
     navIcon.style.transition = "color 0.1s";
+    const checkList = ["/detail","/aboutUs"]
+
+    const isSpecialPage = checkList.some(page => activePage.includes(page));
 
     if (window.scrollY > 50) {
       navbar.classList.add("bg-white");
@@ -96,7 +99,7 @@ export function scrollNavbar({ first, second }) {
       navbar.classList.add("py-[20px]");
       navList.classList.remove("text-black");
       navList.classList.add("text-white");
-      if (activePage.includes("/detail")) {
+      if (isSpecialPage) {
         navIcon.classList.add("text-black");
         navIcon.classList.remove("text-white");
         navList.classList.remove("text-white");
