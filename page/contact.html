@@ -3,9 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FastFoodHeaven</title>
   </head>
-  <body>
-    <h1>contact</h1>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header id="renderNavBar"></header>
+    <!-- TODO  Scroll Up -->
+    <main class="flex-grow">
+      <section
+        class="bg-[url('../photo/contactUs2.png')] h-[500px] object-cover bg-no-repeat bg-center relative"
+      >
+        <div
+          class="absolute inset-0 opacity-60 bg-[url('../photo/blackPaper.png')] object-cover bg-no-repeat bg-center"
+        ></div>
+        <section class="z-20 relative">
+          <div
+            class="text-white text-center place-content-center h-[500px] cursor-default"
+          >
+            <h1 class="text-[50px] font-bold">CONTACT</h1>
+            <ul class="flex justify-center gap-2 font-semibold">
+              <li><a href="../index.html">Home</a></li>
+              <li class="cursor-default">/</li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section class="mt-[30px] text-center">
+        <div class="h-[100px] w-5 mx-auto border-[#C5291C] border-r-4"></div>
+        <h2
+          class="tracking-[6px] text-[#C5291C] font-bold text-[20px] mt-[15px]"
+        >
+          CONTACT US
+        </h2>
+        <h1 class="font-bold text-[42px]">Feel Free To Contact</h1>
+      </section>
+      <section class="grid grid-cols-3 mx-auto w-[60%] mt-[50px] text-center">
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-location-dot text-[#C5291C] text-[28px]"></i>
+          <h4 class="font-bold text-[24px]">Address</h4>
+          <p class="text-gray-400 text-[18px]">123 Street, New York, USA</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-phone text-[#C5291C] text-[28px]"></i>
+          <h4 class="font-bold text-[24px]">Phone</h4>
+          <p class="text-gray-400 text-[18px]">+012 345 678</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-envelope text-[#C5291C] text-[28px]"></i>
+          <h4 class="font-bold text-[24px]">Email</h4>
+          <p class="text-gray-400 text-[18px]">alexkgm@gmail.com</p>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 mx-auto w-[70%] mt-[50px]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7734608391074!2d104.89215120989644!3d11.568091344046783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095173761d4a53%3A0xcd09ff2f4d326e3f!2sSETEC%20Institute!5e0!3m2!1sen!2sus!4v1731431408586!5m2!1sen!2sus"
+          class="w-full h-full border-none"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="ml-10 flex flex-col gap-5">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full border-gray-400"
+          />
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="w-full border-gray-400"
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            class="w-full border-gray-400"
+          />
+          <textarea
+            placeholder="Message"
+            style="resize: none"
+            class="w-full h-[200px] border-gray-400 p-2"
+          ></textarea>
+          <button
+            class="bg-[#C5291C] text-white px-5 py-2 font-semibold rounded-md w-[150px]"
+          >
+            Send Message
+          </button>
+        </div>
+      </section>
+      <section
+        id="scrollIcon"
+        class="fixed bottom-5 left-[52%] z-50 transform -translate-x-[50%] opacity-0 transition-opacity duration-300 ease-in-out cursor-pointer"
+      >
+        <i
+          class="fa-solid fa-chevron-up p-3 bg-white text-black rounded-full shadow-lg"
+        ></i>
+      </section>
+      <!-- TODO Chat Bot -->
+      <section id="renderChatBot"></section>
+    </main>
+    <footer id="renderFooter"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script type="module">
+      import { scrollNavbar } from "../js/index.js";
+      import { NavBar } from "../components/navbar.js";
+      import { Footer } from "../components/footer.js";
+
+      const homeLink = "../index.html";
+      const aboutLink = "./aboutUs.html";
+      const contactLink = "./contact.html";
+      const kfc = "../kfc.html";
+      const burgerKing = "#";
+      const mcDonald = "#";
+      const wendy = "#";
+      const hungryJack = "#";
+
+      document.getElementById("renderNavBar").innerHTML = NavBar(
+        homeLink,
+        aboutLink,
+        contactLink,
+        kfc
+      );
+
+      const logoFooter = "../photo/logo/logo1.2.png";
+      const kfcFooter = "#";
+      const burgerKingFooter = "#";
+      const mcDonaldFooter = "#";
+      const wendyFooter = "#";
+      const hungryJackFooter = "#";
+      const facebookFooter = "#";
+      const twitterFooter = "#";
+      const youtubeFooter = "#";
+
+      document.getElementById("renderFooter").innerHTML = Footer(
+        logoFooter,
+        kfcFooter,
+        burgerKingFooter,
+        mcDonaldFooter,
+        wendyFooter,
+        hungryJackFooter,
+        facebookFooter,
+        twitterFooter,
+        youtubeFooter
+      );
+
+      scrollNavbar({
+        first: "../photo/logo/logo1.png",
+        second: "../photo/logo/logo1.2.png",
+      });
+    </script>
   </body>
 </html>
