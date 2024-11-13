@@ -3,9 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FastFoodHeaven</title>
   </head>
-  <body>
-    <h1>HelloKFC</h1>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header id="renderNavBar"></header>
+    <!-- TODO  Scroll Up -->
+    <main class="flex-grow">
+      <section
+        class="bg-[url('../photo/kfcBanner.png')] h-[500px] object-cover bg-no-repeat bg-center relative"
+      >
+      </section>
+      <section
+        id="scrollIcon"
+        class="fixed bottom-5 left-[52%] z-50 transform -translate-x-[50%] opacity-0 transition-opacity duration-300 ease-in-out cursor-pointer"
+      >
+        <i
+          class="fa-solid fa-chevron-up p-3 bg-white text-black rounded-full shadow-lg"
+        ></i>
+      </section>
+      <!-- TODO Chat Bot -->
+      <section id="renderChatBot"></section>
+    </main>
+    <footer id="renderFooter"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script type="module">
+      import { scrollNavbar } from "../js/index.js";
+      import { NavBar } from "../components/navbar.js";
+      import { Footer } from "../components/footer.js";
+
+      const homeLink = "../index.html";
+      const aboutLink = "./aboutUs.html";
+      const contactLink = "./contact.html";
+      const kfc = "./kfc.html";
+      const burgerKing = "#";
+      const mcDonald = "#";
+      const wendy = "#";
+      const hungryJack = "#";
+
+      document.getElementById("renderNavBar").innerHTML = NavBar(
+        homeLink,
+        aboutLink,
+        contactLink,
+        kfc
+      );
+
+      const logoFooter = "../photo/logo/logo1.2.png";
+      const kfcFooter = "#";
+      const burgerKingFooter = "#";
+      const mcDonaldFooter = "#";
+      const wendyFooter = "#";
+      const hungryJackFooter = "#";
+      const facebookFooter = "#";
+      const twitterFooter = "#";
+      const youtubeFooter = "#";
+
+      document.getElementById("renderFooter").innerHTML = Footer(
+        logoFooter,
+        kfcFooter,
+        burgerKingFooter,
+        mcDonaldFooter,
+        wendyFooter,
+        hungryJackFooter,
+        facebookFooter,
+        twitterFooter,
+        youtubeFooter
+      );
+
+      scrollNavbar({
+        first: "../photo/logo/logo1.png",
+        second: "../photo/logo/logo1.2.png",
+      });
+    </script>
   </body>
 </html>
