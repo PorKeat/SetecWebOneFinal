@@ -8,16 +8,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (activePage === "/" || activePage === "/index.html") {
     navLinks.forEach((link) => {
-      const isHomePage =
-        link.href === window.location.origin + "/" ||
-        link.href.includes("/index.html");
-      link.classList.toggle(
-        "transition-all before:duration-500 before:h-1 before:rounded-full before:w-full before:opacity-100 before:bg-[#C5291C]",
-        isHomePage
-      );
+      if (
+        link.href.includes("/index.html") ||
+        link.href === window.location.origin + "/"
+      ) {
+        link.classList.add(
+          "transition-all",
+          "before:duration-500",
+          "before:h-1",
+          "before:rounded-full",
+          "before:w-full",
+          "before:opacity-100",
+          "before:bg-[#C5291C]"
+        );
+      } else {
+        link.classList.remove(
+          "transition-all",
+          "before:duration-500",
+          "before:h-1",
+          "before:rounded-full",
+          "before:w-full",
+          "before:opacity-100",
+          "before:bg-[#C5291C]"
+        );
+      }
     });
   }
-
   navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
       link.classList.remove("before:bg-[#C5291C]");
