@@ -7,17 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const brandButton = document.getElementById("dropdownDelayButton");
 
   navLinks.forEach((link) => {
-    const isHomePage =
-      (activePage === "/" || activePage === "/index.html") &&
-      (link.href === window.location.origin + "/" ||
-        link.href.includes("/index.html"));
-    link.classList.toggle(
-      "transition-all before:duration-500 before:h-1 before:rounded-full before:w-full before:opacity-100 before:bg-[#C5291C]",
-      isHomePage
-    );
-  });
-
-  navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
       link.classList.remove("before:bg-[#C5291C]");
       link.classList.add(
