@@ -3,9 +3,868 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FastFoodHeaven</title>
   </head>
-  <body>
-    <h1>Hello Jack</h1>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header id="renderNavBar"></header>
+    <!-- TODO  Scroll Up -->
+    <main class="flex-grow">
+      <section
+        class="bg-[url('../photo/jackBanner.png')] h-[500px] object-cover bg-no-repeat bg-center relative"
+      ></section>
+      <section class="my-20">
+        <div class="text-center font-bold leading-6 cursor-default">
+          <small class="text-gray-400">POPULAR</small>
+          <h1 class="text-[28px]">HUNGRY-JACK MENU</h1>
+        </div>
+      </section>
+      <section class="w-[90%] mx-auto mt-10">
+        <div class="grid grid-cols-5 grid-rows-2 justify-items-center gap-10">
+          <!--TODO CardOne -->
+          <a href="./detailWendyOne.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy1.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Baconator®</h4>
+                    <strong class="text-[20px] font-bold">$4.69</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    A half-pound* of fresh beef, American cheese, 6 pieces of
+                    crispy Applewood smoked bacon, ketchup, and mayo. Carnivores
+                    rejoice!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwo -->
+          <a href="./detailWendyTwo.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy2.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Cheeseburger</h4>
+                    <strong class="text-[20px] font-bold">$2.49</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Fresh beef topped with cheese, pickles, onion, ketchup, and
+                    mustard on a toasted bun. It’s done just right, and just the
+                    right size.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardThree -->
+          <a href="./detailWendyThree.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy3.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Dave's Single</h4>
+                    <strong class="text-[20px] font-bold">$6.49</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    A quarter-pound* of fresh beef, American cheese, crisp
+                    lettuce, tomato, pickle, ketchup, mayo, and onion on a
+                    toasted bun — just the way Dave intended.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardFour -->
+          <a href="./detailWendyFour.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy4.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Dave's Double</h4>
+                    <strong class="text-[20px] font-bold">$7.69</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    A half-pound* of fresh beef, American cheese, crisp lettuce,
+                    tomato, pickle, ketchup, mayo, and onion on a toasted bun.
+                    More meat means more to love.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardFive -->
+          <a href="./detailWendyFive.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy5.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Dave's Triple</h4>
+                    <strong class="text-[20px] font-bold">$8.89</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Three quarters of a pound* of fresh, never frozen beef,
+                    American cheese, crisp lettuce, tomato, pickle, ketchup,
+                    mayo, and onion on a toasted bun. Use both hands!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardSix -->
+          <a href="./detailWendySix.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy6.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Jr. Hamburger</h4>
+                    <strong class="text-[20px] font-bold">$2.19</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Fresh, never frozen beef topped with pickles, onion,
+                    ketchup, and mustard on a toasted bun. It’s done just right,
+                    and just the right size.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardSeven -->
+          <a href="./detailWendySeven.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy7.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Double Stack™</h4>
+                    <strong class="text-[20px] font-bold">$2.99</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Two patties of fresh, never frozen beef with cheese,
+                    ketchup, mustard, pickle, and onion. It’s double the fresh
+                    beef, stacked with deliciousness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardEight -->
+          <a href="./detailWendyEight.html" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy8.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Beef Biscuit</h4>
+                    <strong class="text-[20px] font-bold">$5.99</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Grilled, breakfast sausage on a soft buttermilk biscuit.
+                    Simple breakfast perfection.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardNine -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy9.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Mush Burger</h4>
+                    <strong class="text-[20px] font-bold">$2.79</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    A quarter pound of fresh, never-frozen beef, roasted
+                    mushrooms, Applewood smoked bacon, muenster cheese, and a
+                    creamy garlic spread. Literally oozing with umami. *Fresh
+                    beef available in the contiguous U.S., Alaska and Canada
+                    Approximate weight before cooking
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy10.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Egg Biscuit</h4>
+                    <strong class="text-[20px] font-bold">$3.29</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Freshly cracked grade A egg on a butter-brushed buttermilk
+                    biscuit, topped with melted American cheese. It’s not
+                    complicated. It’s just good.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardEleven -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy11.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Butter Biscuit</h4>
+                    <strong class="text-[20px] font-bold">$2.45</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Fluffy buttermilk biscuit spread with maple honey butter.
+                    The kind of down-home breakfast that melts in your mouth and
+                    makes you reminisce about the farm, even if you’re from the
+                    city.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwelve -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy12.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Gravy Biscuit</h4>
+                    <strong class="text-[20px] font-bold">$2.55</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    A fluffy buttermilk biscuit smothered in white pepper gravy
+                    and grilled breakfast sausage. It’s what southern
+                    hospitality tastes like.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardThirdteen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy13.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Toast Sticks</h4>
+                    <strong class="text-[20px] font-bold">$2.89</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Four warm, fluffy French toast sticks that don’t really
+                    remind you of how Mom made them because, to be honest, these
+                    are better. Dip them in our syrup, and maybe don’t tell her
+                    about it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardFourteen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy14.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Fries</h4>
+                    <strong class="text-[20px] font-bold">$2.10</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Big Breakfast® 1060 Cal.1060 Cal. Our full, satisfying Big
+                    Breakfast is perfect for any morning. Ever wondered what's
+                    in a McDonald's Big Breakfast? Wake up to a breakfast meal
+                    with a warm biscuit, fluffy scrambled eggs, savory
+                    McDonald's sausage and crispy golden Hash Browns. There are
+                    760 calories in Big Breakfast at McDonald's.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardFifteen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy15.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Cinnabon</h4>
+                    <strong class="text-[20px] font-bold">$2.49</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Warm, buttery, dough bites baked together with world-famous
+                    Cinnabon®? cinnamon and topped with their signature cream
+                    cheese frosting. Ooey, gooey corporate synergy. Cinnabon®
+                    and the Cinnabon® logo are registered trademarks of Cinnabon
+                    Franchisor SPV LLC. ©2024 Cinnabon Franchisor SPV LLC.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardSixteen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy16.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Oatmeal Bar</h4>
+                    <strong class="text-[20px] font-bold">$1.29</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Give yourself a wholesome start to the day with our Fresh
+                    Baked Oatmeal Bar made with whole oats, sweet blueberries
+                    and tart cranberries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardSeventeen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy17.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Bacon Burrito</h4>
+                    <strong class="text-[20px] font-bold">$3.49</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Fresh-cracked grade A eggs, Applewood smoked bacon, American
+                    cheese, and seasoned potatoes smothered in a creamy Swiss
+                    cheese sauce and wrapped in a warm, flour tortilla with
+                    Cholula® Hot Sauce on the side. Breakfast will never burrito
+                    the same. Cholula is a registered trademark of SPICY LIQUID
+                    LLC © 2023, used under license.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardEighteen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy18.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Egg Burrito</h4>
+                    <strong class="text-[20px] font-bold">$3.29</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Fresh-cracked grade A eggs, grilled savory sausage, American
+                    cheese, and seasoned potatoes smothered in a creamy cheese
+                    sauce and wrapped in a warm flour tortilla with Cholula® Hot
+                    Sauce on the side. Breakfast will never burrito the same.
+                    Cholula is a registered trademark of SPICY LIQUID LLC ©
+                    2023, used under license.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardNineteen -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy19.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Bacon Fries</h4>
+                    <strong class="text-[20px] font-bold">$3.00</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Our natural-cut, skin-on, sea-salted fries topped with warm,
+                    creamy cheese sauce, shredded cheddar, and crispy Applewood
+                    smoked bacon. The only fries worthy of the Baconator name.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwenty -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy20.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Spicy Fries</h4>
+                    <strong class="text-[20px] font-bold">$2.39</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Our natural-cut, skin-on, sea-salted fries topped with our
+                    hearty chili and rich, creamy cheese sauce. Easy to love.
+                    Hard to beat. App!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwentyOne -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy21.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Cheese Fries</h4>
+                    <strong class="text-[20px] font-bold">$2.39</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Our natural-cut fries, smothered in a rich, creamy cheese
+                    sauce, create the perfect combination of crispy and
+                    indulgent flavors. Every bite is a satisfying mix of savory
+                    goodness, with the warmth of the cheese perfectly
+                    complementing the crispy texture of the fries. A deliciously
+                    cheesy snack or side!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwentyTwo -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy22.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Bacon Potato</h4>
+                    <strong class="text-[20px] font-bold">$4.49</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Hot and fluffy potato topped with creamy cheese sauce,
+                    shredded cheese, and Applewood smoked bacon. Because nothing
+                    goes with a potato like cheese, more cheese, and also bacon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwentyThree -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy23.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Plain Potato</h4>
+                    <strong class="text-[20px] font-bold">$2.49</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    The satisfying simplicity of good, honest, hot, fluffy baked
+                    potato perfection. Ingredients: Potato.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwentyFour -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy24.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Spicy Potato</h4>
+                    <strong class="text-[20px] font-bold">$3.99</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Hot and fluffy potato topped with Wendy’s signature meaty,
+                    flavorful chili, rich, creamy cheese sauce, and shredded
+                    cheddar. This spud’s your best bud.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--TODO CardTwentyFive -->
+          <a href="#" class="cursor-pointer">
+            <div
+              class="bg-white h-[300px] w-[250px] rounded-[30px] border-dashed border-transparent border-2 relative overflow-hidden shadow-[-1px_20px_13px_-20px_#b4b6b8] transition-all duration-500 ease-in hover:scale-105 hover:bg-transparent hover:border-[#C5291C]"
+            >
+              <div
+                class="z-30 absolute top-[40px] items-center flex flex-col text-black"
+              >
+                <div>
+                  <img
+                    src="../photo/wendy/wendy25.png"
+                    alt=""
+                    class="h-[120px] object-cover"
+                  />
+                </div>
+                <div class="flex flex-col mt-3 w-[80%] mx-auto">
+                  <div class="flex justify-between mb-2">
+                    <h4 class="font-bold text-[20px] mb-1">Cheese Potato</h4>
+                    <strong class="text-[20px] font-bold">$3.29</strong>
+                  </div>
+
+                  <p class="line-clamp-2 text-gray-400">
+                    Hot and fluffy potato with shredded cheddar cheese and rich,
+                    creamy cheese sauce on top. It’s savory and delicious no
+                    matter how you skin it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section
+        id="scrollIcon"
+        class="fixed bottom-5 left-[52%] z-50 transform -translate-x-[50%] opacity-0 transition-opacity duration-300 ease-in-out cursor-pointer"
+      >
+        <i
+          class="fa-solid fa-chevron-up p-3 bg-white text-black rounded-full shadow-lg"
+        ></i>
+      </section>
+      <!-- TODO Chat Bot -->
+      <section id="renderChatBot"></section>
+    </main>
+    <footer id="renderFooter"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script type="module">
+      import { scrollNavbar } from "../js/index.js";
+      import { NavBar } from "../components/navbar.js";
+      import { Footer } from "../components/footer.js";
+
+      const homeLink = "../index.html";
+      const aboutLink = "./aboutUs.html";
+      const contactLink = "./contact.html";
+      const kfc = "./kfc.html";
+      const burgerKing = "./burgerKing.html";
+      const mcDonald = "./mcDonald.html";
+      const wendy = "./wendy.html";
+      const hungryJack = "./hungryJack.html";
+
+      document.getElementById("renderNavBar").innerHTML = NavBar(
+        homeLink,
+        aboutLink,
+        contactLink,
+        kfc,
+        burgerKing,
+        mcDonald,
+        wendy,
+        hungryJack
+      );
+
+      const logoFooter = "../photo/logo/logo1.2.png";
+      const kfcFooter = "./kfc.html";
+      const burgerKingFooter = "./burgerKing.html";
+      const mcDonaldFooter = "./mcDonald.html";
+      const wendyFooter = "./wendy.html";
+      const hungryJackFooter = "./hungryJack.html";
+      const facebookFooter = "#";
+      const twitterFooter = "#";
+      const youtubeFooter = "#";
+
+      document.getElementById("renderFooter").innerHTML = Footer(
+        logoFooter,
+        kfcFooter,
+        burgerKingFooter,
+        mcDonaldFooter,
+        wendyFooter,
+        hungryJackFooter,
+        facebookFooter,
+        twitterFooter,
+        youtubeFooter
+      );
+
+      scrollNavbar({
+        first: "../photo/logo/logo1.png",
+        second: "../photo/logo/logo1.2.png",
+      });
+    </script>
   </body>
 </html>
