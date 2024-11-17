@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(activePage);
   const navLinks = document.querySelectorAll("#navList a");
   const brandButton = document.getElementById("dropdownDelayButton");
+  const about = document.getElementById("aboutUs");
+  const contact = document.getElementById("contactUs");
 
   navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
@@ -16,6 +18,25 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     } else if (activePage.includes("/kfc.html")) {
       brandButton.classList.add(
+        "transition-all",
+        "before:duration-500",
+        "before:h-1",
+        "before:rounded-full",
+        "before:w-full",
+        "before:opacity-100",
+        "before:bg-[#C5291C]"
+      );
+    } else if (activePage.includes("/index.html")) {
+      about.classList.remove(
+        "transition-all",
+        "before:duration-500",
+        "before:h-1",
+        "before:rounded-full",
+        "before:w-full",
+        "before:opacity-100",
+        "before:bg-[#C5291C]"
+      );
+      contact.classList.remove(
         "transition-all",
         "before:duration-500",
         "before:h-1",
@@ -80,9 +101,9 @@ export function scrollNavbar({ first, second }) {
     navbar.style.transition = "0.6s";
     navList.style.transition = "color 0.1s";
     navIcon.style.transition = "color 0.1s";
-    const checkList = ["/detail","/aboutUs"]
+    const checkList = ["/detail", "/aboutUs"];
 
-    const isSpecialPage = checkList.some(page => activePage.includes(page));
+    const isSpecialPage = checkList.some((page) => activePage.includes(page));
 
     if (window.scrollY > 50) {
       navbar.classList.add("bg-white");
