@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "before:opacity-100",
         "before:bg-[#C5291C]"
       );
+      link.classList.remove("before:bg-[#C5291C]");
     } else if (activePage.includes("/detail")) {
       link.classList.remove("before:bg-[#C5291C]");
       link.classList.add(
