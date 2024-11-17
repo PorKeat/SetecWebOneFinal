@@ -16,27 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "hover:before:opacity-100",
         "hover:before:bg-[#C5291C]"
       );
+    } else if (activePage.includes("/index.html")) {
+      about.classList.remove("before:bg-[#C5291C]");
+      contact.classList.remove("before:bg-[#C5291C]");
     } else if (activePage.includes("/kfc.html")) {
       brandButton.classList.add(
-        "transition-all",
-        "before:duration-500",
-        "before:h-1",
-        "before:rounded-full",
-        "before:w-full",
-        "before:opacity-100",
-        "before:bg-[#C5291C]"
-      );
-    } else if (activePage.includes("/index.html")) {
-      about.classList.remove(
-        "transition-all",
-        "before:duration-500",
-        "before:h-1",
-        "before:rounded-full",
-        "before:w-full",
-        "before:opacity-100",
-        "before:bg-[#C5291C]"
-      );
-      contact.classList.remove(
         "transition-all",
         "before:duration-500",
         "before:h-1",
