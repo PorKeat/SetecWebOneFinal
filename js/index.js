@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const home = document.getElementById("home");
 
   navLinks.forEach((link) => {
-    if (link.href === "/") {
+    if (link.href === "/" && activePage === "/") {
       home.classList.add(
         "transition-all",
         "before:duration-500",
