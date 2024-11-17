@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const brandButton = document.getElementById("dropdownDelayButton");
   const about = document.getElementById("about");
 
-  if(activePage.includes("/index")){
+  if(activePage.includes("/")){
     about.classList.remove("before:bg-[#C5291C]");
   }
 
