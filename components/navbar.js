@@ -18,6 +18,7 @@ export const NavBar = (
               <li>
                 <a
                   href=${home}
+                  id="home"
                   class="cursor-pointer relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 hover:before:w-full hover:before:opacity-100 hover:before:bg-gradient-to-r hover:before:bg-[#C5291C]"
                 >
                   Home
