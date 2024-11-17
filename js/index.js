@@ -5,35 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(activePage);
   const navLinks = document.querySelectorAll("#navList a");
   const brandButton = document.getElementById("dropdownDelayButton");
+  const about = document.getElementById("about");
 
-  if (activePage === "/" || activePage === "/index.html") {
-    navLinks.forEach((link) => {
-      if (
-        link.href.includes("/index.html") ||
-        link.href === window.location.origin + "/"
-      ) {
-        link.classList.add(
-          "transition-all",
-          "before:duration-500",
-          "before:h-1",
-          "before:rounded-full",
-          "before:w-full",
-          "before:opacity-100",
-          "before:bg-[#C5291C]"
-        );
-      } else {
-        link.classList.remove(
-          "transition-all",
-          "before:duration-500",
-          "before:h-1",
-          "before:rounded-full",
-          "before:w-full",
-          "before:opacity-100",
-          "before:bg-[#C5291C]"
-        );
-      }
-    });
+  if(activePage.includes("/index")){
+    about.classList.remove("before:bg-[#C5291C]");
   }
+
+  
+
   navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
       link.classList.remove("before:bg-[#C5291C]");
