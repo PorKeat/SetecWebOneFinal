@@ -5,8 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(activePage);
   const navLinks = document.querySelectorAll("#navList a");
   const brandButton = document.getElementById("dropdownDelayButton");
-  const about = document.getElementById("aboutUs");
-  const contact = document.getElementById("contactUs");
+
+  if (activePage === "/" || activePage === "/index.html") {
+    navLinks.forEach((link) => {
+      const isHomePage =
+        link.href === window.location.origin + "/" ||
+        link.href.includes("/index.html");
+      link.classList.toggle(
+        "transition-all before:duration-500 before:h-1 before:rounded-full before:w-full before:opacity-100 before:bg-[#C5291C]",
+        isHomePage
+      );
+    });
+  }
 
   navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
@@ -16,9 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "hover:before:opacity-100",
         "hover:before:bg-[#C5291C]"
       );
-    } else if (activePage.includes("/index.html")) {
-      about.classList.remove("before:bg-[#C5291C]");
-      contact.classList.remove("before:bg-[#C5291C]");
     } else if (activePage.includes("/kfc.html")) {
       brandButton.classList.add(
         "transition-all",
