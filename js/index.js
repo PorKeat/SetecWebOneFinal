@@ -5,20 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(activePage);
   const navLinks = document.querySelectorAll("#navList a");
   const brandButton = document.getElementById("dropdownDelayButton");
-  const about = document.getElementById("about");
 
-  if (activePage.includes("/")) {
-    about.classList.remove(
-      "before:bg-[#C5291C]",
-      "transition-all",
-      "before:duration-500",
-      "before:h-1",
-      "before:rounded-full",
-      "before:w-full",
-      "before:opacity-100",
-      "before:bg-[#C5291C]"
+
+  navLinks.forEach((link) => {
+    const isHomePage = (activePage === "/" || activePage === "/index.html") && (
+      link.href === window.location.origin + "/" || link.href === window.location.origin + "/index.html"
     );
-  }
+    console.log(`activePage: ${activePage}, link.href: ${link.href}, isHomePage: ${isHomePage}`);
+    link.classList.toggle(
+      "transition-all before:duration-500 before:h-1 before:rounded-full before:w-full before:opacity-100 before:bg-[#C5291C]",
+      isHomePage
+    );
+  });
+  
 
   navLinks.forEach((link) => {
     if (activePage.includes("/detail")) {
