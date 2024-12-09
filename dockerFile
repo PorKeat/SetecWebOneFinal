@@ -1,0 +1,11 @@
+# Use an official Nginx image to serve static files
+FROM nginx
+
+# Copy your static files to the Nginx HTML directory
+COPY . /usr/share/nginx/html
+
+# Expose the default Nginx port
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
