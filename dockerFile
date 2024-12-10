@@ -1,10 +1,10 @@
-# Use an official Nginx image to serve static files
-FROM nginx
+# Use an official Nginx image
+FROM nginx:alpine
 
-# Copy your static files to the Nginx HTML directory
-COPY . /usr/share/nginx/html
+# Copy your static files to Nginx
+COPY ./build /usr/share/nginx/html
 
-# Expose the default Nginx port
+# Expose port 80
 EXPOSE 80
 
 # Start Nginx
